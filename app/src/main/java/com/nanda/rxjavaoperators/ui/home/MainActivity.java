@@ -7,6 +7,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.nanda.rxjavaoperators.R;
 import com.nanda.rxjavaoperators.ui.operators.ConcatExampleActivity;
+import com.nanda.rxjavaoperators.ui.operators.MergeActivity;
 import com.nanda.rxjavaoperators.ui.operators.ZipExampleActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,5 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
   @OnClick(R.id.btn_operator_zip) public void onZipClick() {
     startActivity(new Intent(MainActivity.this, ZipExampleActivity.class));
+  }
+
+  @OnClick(R.id.btn_operator_merge) public void onMergeClick() {
+    startActivity(new Intent(MainActivity.this, MergeActivity.class));
   }
 }
