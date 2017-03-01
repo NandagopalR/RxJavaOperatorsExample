@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <Button
+      android:id="@+id/btn_operator_concat"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="3dp"
+      android:text="Concat Operator"
+      />
+
+  <Button
+      android:id="@+id/btn_operator_zip"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:text="Zip Operator"
+      />
+</LinearLayout>
