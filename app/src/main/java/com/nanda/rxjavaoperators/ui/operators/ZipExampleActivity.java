@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import rx.Observable;
 import rx.functions.Func1;
+import rx.functions.Func2;
 
 /**
  * Created by nandagopal on 2/28/17.
@@ -32,11 +33,14 @@ public class ZipExampleActivity extends BaseActivity {
 
   @OnClick(R.id.btn_do_zip) public void onClick() {
     Observable.zip(Observable.just(CommonUtils.getAndroidDevList()),
-        Observable.just(CommonUtils.getIPhoneDevList()), (persons, persons2) -> {
-          List<Person> personList = new ArrayList<>(persons.size() + persons2.size());
-          personList.addAll(persons);
-          personList.addAll(persons2);
-          return personList;
+        Observable.just(CommonUtils.getIPhoneDevList()),
+        new Func2<List<Person>, List<Person>, List<Person>>() {
+          @Override public List<Person> call(List<Person> persons, List<Person> persons2) {
+            List<Person> personList = new ArrayList<>(persons.size() + persons2.size());
+            personList.addAll(persons);
+            personList.addAll(persons2);
+            return personList;
+          }
         }).flatMapIterable(new Func1<List<Person>, Iterable<Person>>() {
       @Override public Iterable<Person> call(List<Person> persons) {
         return persons;

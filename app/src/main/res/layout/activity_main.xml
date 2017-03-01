@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
-        android:text="Concat Operator"
+        android:text="Concat"
         />
 
     <Button
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="Zip Operator"
+        android:text="Zip"
         />
 
     <Button
@@ -32,7 +32,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="Merge Operator"
+        android:text="Merge"
+        />
+
+    <Button
+        android:id="@+id/btn_operator_flatmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="FlatMapIterable"
         />
   </LinearLayout>
 </ScrollView>

@@ -7,6 +7,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.nanda.rxjavaoperators.R;
 import com.nanda.rxjavaoperators.ui.operators.ConcatExampleActivity;
+import com.nanda.rxjavaoperators.ui.operators.FlatMapIterableActivity;
 import com.nanda.rxjavaoperators.ui.operators.MergeActivity;
 import com.nanda.rxjavaoperators.ui.operators.ZipExampleActivity;
 
@@ -28,5 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
   @OnClick(R.id.btn_operator_merge) public void onMergeClick() {
     startActivity(new Intent(MainActivity.this, MergeActivity.class));
+  }
+
+  @OnClick(R.id.btn_operator_flatmap) public void onFlatMapClick() {
+    startActivity(new Intent(MainActivity.this, FlatMapIterableActivity.class));
   }
 }

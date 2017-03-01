@@ -19,6 +19,7 @@
     <activity android:name=".ui.operators.ConcatExampleActivity"/>
     <activity android:name=".ui.operators.ZipExampleActivity"/>
     <activity android:name=".ui.operators.MergeActivity"/>
+    <activity android:name=".ui.operators.FlatMapIterableActivity"/>
 
   </application>
 
