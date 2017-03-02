@@ -5,15 +5,15 @@ package com.nanda.rxjavaoperators.model;
  */
 public class Person {
 
-  private String personId;
+  private int personId;
   private String personName;
   private long mobileNumber;
 
-  public String getPersonId() {
+  public int getPersonId() {
     return personId;
   }
 
-  public void setPersonId(String personId) {
+  public void setPersonId(int personId) {
     this.personId = personId;
   }
 

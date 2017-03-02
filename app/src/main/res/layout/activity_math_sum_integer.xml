@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <Button
+      android:id="@+id/btn_sum_int_from_diff"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Sum From Different Numbers"
+      />
+
+  <Button
+      android:id="@+id/btn_sum_int_from_list"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Sum From Primitive Type List"
+      />
+
+  <Button
+      android:id="@+id/btn_sum_int_from_person_list"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Sum From Person List"
+      />
+
+  <TextView
+      android:id="@+id/tv_result"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="10dp"
+      android:textSize="18sp"
+      tools:text="@string/app_name"
+      />
+
+</LinearLayout>

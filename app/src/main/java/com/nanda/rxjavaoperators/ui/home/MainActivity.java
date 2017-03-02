@@ -9,6 +9,7 @@ import com.nanda.rxjavaoperators.R;
 import com.nanda.rxjavaoperators.ui.operators.ConcatExampleActivity;
 import com.nanda.rxjavaoperators.ui.operators.FlatMapIterableActivity;
 import com.nanda.rxjavaoperators.ui.operators.MergeActivity;
+import com.nanda.rxjavaoperators.ui.operators.RxJavaMathActivity;
 import com.nanda.rxjavaoperators.ui.operators.ZipExampleActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     ButterKnife.bind(this);
+  }
+
+  @OnClick(R.id.btn_rxjava_math) public void onRxJavaMathClick() {
+    startActivity(new Intent(MainActivity.this, RxJavaMathActivity.class));
   }
 
   @OnClick(R.id.btn_operator_concat) public void onConcatClick() {

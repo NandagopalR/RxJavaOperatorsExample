@@ -12,43 +12,35 @@
       >
 
     <Button
-        android:id="@+id/btn_rxjava_math"
+        android:id="@+id/btn_math_sum_int"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
-        android:text="RxJava Math"
+        android:text="Sum Integer"
         />
 
     <Button
-        android:id="@+id/btn_operator_concat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:text="Concat"
-        />
-
-    <Button
-        android:id="@+id/btn_operator_zip"
+        android:id="@+id/btn_math_sum_long"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="Zip"
+        android:text="Sum Long"
         />
 
     <Button
-        android:id="@+id/btn_operator_merge"
+        android:id="@+id/btn_math_sum_double"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="Merge"
+        android:text="Sum Double"
         />
 
     <Button
-        android:id="@+id/btn_operator_flatmap"
+        android:id="@+id/btn_math_sum_float"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="FlatMapIterable"
+        android:text="Sum Float"
         />
   </LinearLayout>
 </ScrollView>

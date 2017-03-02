@@ -16,6 +16,11 @@
       </intent-filter>
     </activity>
 
+    <activity android:name=".ui.operators.RxJavaMathActivity"/>
+    <activity android:name=".ui.rxmath.SumIntegerActivity"/>
+    <activity android:name=".ui.rxmath.SumLongActivity"/>
+    <activity android:name=".ui.rxmath.SumFloatActivity"/>
+    <activity android:name=".ui.rxmath.SumDoubleActivity"/>
     <activity android:name=".ui.operators.ConcatExampleActivity"/>
     <activity android:name=".ui.operators.ZipExampleActivity"/>
     <activity android:name=".ui.operators.MergeActivity"/>
